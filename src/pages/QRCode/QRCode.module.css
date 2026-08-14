@@ -1,0 +1,6 @@
+.page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: hsl(212deg 45% 89%);
+}
