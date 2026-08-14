@@ -55,7 +55,7 @@
 }
 
 .description {
-  font-size: var(--color-description);
+  font-size: var(--fs-description);
   line-height: 1.4;
   letter-spacing: 0.2px;
   color: var(--color-description);
