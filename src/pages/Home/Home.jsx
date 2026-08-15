@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 function Home() {
   return (
     <main className={styles.page}>
-      <h1>Frontend Mentor Solutions</h1>
+      <h1>Frontend Mentor Challenges</h1>
 
       <div className={styles.grid}>
         {solutions.map((solution) => (

@@ -1,23 +1,13 @@
 import styles from './QRCard.module.css';
-import qrCode from '../../assets/image-qr-code.png';
 
-function QRCard() {
+function QRCard({ qrImage, title, description, alt = 'QR code' }) {
   return (
     <article className={styles.card}>
-      <img
-        className={styles.image}
-        src={qrCode}
-        alt="QR code linking to Frontend Mentor"
-      />
+      <img className={styles.image} src={qrImage} alt={alt} />
 
       <div className={styles.content}>
-        <h1 className={styles.title}>
-          Improve your front-end skills by building projects
-        </h1>
-        <p className={styles.description}>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level.
-        </p>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.description}>{description}</p>
       </div>
     </article>
   );
