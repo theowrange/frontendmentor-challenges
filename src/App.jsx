@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router';
-import Home from './pages/Home/Home';
-import QRCode from './pages/QRCode/QRCode';
+import { routes } from './routes/routes';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/qr-code" element={<QRCode />} />
+      {routes.map((route) => (
+        <Route key={route.path} path={route.path} element={route.element} />
+      ))}
     </Routes>
   );
 }

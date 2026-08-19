@@ -1,6 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
 .page {
   min-height: 100dvh;
   display: grid;
   place-items: center;
   background: hsl(212deg 45% 89%);
+}
+
+.card {
+  --slate-900: hsl(218deg 44% 22%);
+  --slate-500: hsl(216deg 15% 48%);
+  --slate-300: hsl(212deg 45% 89%);
+  --white: hsl(0deg 0% 100%);
+
+  --font-family:
+    'Outfit', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica,
+    arial, sans-serif;
+  --fs-title: 1.375rem;
+  --fs-description: 0.9375rem;
+  --color-title: var(--slate-900);
+  --color-description: var(--slate-500);
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding: var(--spacing-200);
+  padding-block-end: var(--spacing-500);
+  background: white;
+  display: grid;
+  gap: var(--spacing-300);
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px 0px rgb(0 0 0 / 5%);
+  text-align: center;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  font-family: var(--font-family);
+  padding: 0 var(--spacing-200);
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  font-family: inherit;
+  font-size: var(--fs-title);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin: 0;
+  color: var(--color-title);
+}
+
+.description {
+  font-size: var(--fs-description);
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: var(--color-description);
 }

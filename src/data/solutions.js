@@ -1,4 +1,4 @@
-import qrCodeThumbnail from '../assets/preview/preview.jpg';
+import qrCodeThumbnail from '../assets/solutions/qr-code/preview.jpg';
 
 export const solutions = [
   {
