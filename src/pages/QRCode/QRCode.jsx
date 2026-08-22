@@ -1,26 +1,18 @@
-import QRImage from '../../assets/solutions/qr-code/image-qr-code.png';
 import styles from './QRCode.module.css';
 import FadeIn from '../../components/FadeIn/FadeIn';
+import qrCode from '../../data/qrCode';
 
 function QRCode() {
+  const { image, imageAlt, title, description } = qrCode;
   return (
     <main className={styles.page}>
-      <FadeIn duration={500}>
+      <FadeIn>
         <article className={styles.card}>
-          <img
-            className={styles.image}
-            src={QRImage}
-            alt="QR code linking to Frontend Mentor"
-          />
+          <img className={styles.image} src={image} alt={imageAlt} />
 
           <div className={styles.content}>
-            <h1 className={styles.title}>
-              Improve your front-end skills by building projects
-            </h1>
-            <p className={styles.description}>
-              Scan the QR code to visit Frontend Mentor and take your coding
-              skills to the next level.
-            </p>
+            <h1 className={styles.title}>{title}</h1>
+            <p className={styles.description}>{description}</p>
           </div>
         </article>
       </FadeIn>
