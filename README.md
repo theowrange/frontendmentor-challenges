@@ -12,9 +12,10 @@ The live site provides a visual overview of my completed challenges. Each challe
 
 ## Challenges
 
-| Challenge         | Difficulty | Technologies | Live Demo                                                     |
-| ----------------- | ---------- | ------------ | ------------------------------------------------------------- |
-| QR code component | Newbie     | React, CSS   | [View](https://theowrange-frontendmentor.netlify.app/qr-code) |
+| Challenge         | Difficulty | Technologies | Live Demo                                                          |
+| ----------------- | ---------- | ------------ | ------------------------------------------------------------------ |
+| QR code component | Newbie     | React, CSS   | [View](https://theowrange-frontendmentor.netlify.app/qr-code)      |
+| Blog preview card | Newbie     | React, CSS   | [View](https://theowrange-frontendmentor.netlify.app/blog-preview) |
 
 More challenges will be added as I complete them.
 
