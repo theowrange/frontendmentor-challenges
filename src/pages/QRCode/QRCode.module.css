@@ -1,13 +1,13 @@
 .page {
-  --fs-title: 1.375rem;
-  --fs-description: 0.9375rem;
-  --color-title: var(--slate-900);
-  --color-description: var(--slate-500);
-
   --white: hsl(0deg 0% 100%);
   --slate-300: hsl(212deg 45% 89%);
   --slate-500: hsl(216deg 15% 48%);
   --slate-900: hsl(218deg 44% 22%);
+
+  --fs-title: 1.375rem;
+  --fs-description: 0.9375rem;
+  --color-title: var(--slate-900);
+  --color-description: var(--slate-500);
 
   --spacing-500: 40px;
   --spacing-300: 24px;
@@ -21,7 +21,7 @@
 }
 
 .card {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', var(--font-sans-serif);
   max-width: 20rem;
   padding: var(--spacing-200);
   padding-block-end: var(--spacing-500);

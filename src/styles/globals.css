@@ -2,6 +2,7 @@
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
+  font-display: fallback;
   font-weight: 100 900;
   src: url(../assets/fonts/Outfit.woff2) format('woff2');
   unicode-range:
@@ -13,6 +14,7 @@
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
+  font-display: fallback;
   font-weight: 100 900;
   src: url(../assets/fonts/Outfit.woff2) format('woff2');
   unicode-range:
@@ -24,6 +26,7 @@
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
+  font-display: fallback;
   font-weight: 300 900;
   src: url(../assets/fonts/Figtree.woff2) format('woff2');
   unicode-range:
@@ -35,6 +38,7 @@
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
+  font-display: fallback;
   font-weight: 300 900;
   src: url(../assets/fonts/Figtree.woff2) format('woff2');
   unicode-range:
@@ -43,7 +47,19 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
-body {
+html {
+  --font-sans-serif:
+    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-serif:
+    Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif,
+    Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+
+  font-family: var(--font-sans-serif);
+}
+
+/* body {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -59,4 +75,4 @@ body {
     helvetica,
     arial,
     sans-serif;
-}
+} */
