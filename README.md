@@ -4,15 +4,15 @@ A collection of my solutions to [Frontend Mentor](https://www.frontendmentor.io/
 
 I'm using these challenges to practice frontend development, with a focus on building responsive interfaces, writing maintainable code, and gradually learning React.
 
-## Live Site
+## Live Project
 
 **[View my solutions](https://theowrange-frontendmentor.netlify.app/)**
 
-The live site provides a visual overview of my completed challenges. Each challenge can be opened to view the complete implementation.
+The live site provides a visual overview of my completed challenges. Each challenge has its own route where you can view the completed implementation.
 
 ## Challenges
 
-| Challenge         | Difficulty | Technologies | Live Demo                                                          |
+| Challenge         | Difficulty | Technologies | Solution                                                           |
 | ----------------- | ---------- | ------------ | ------------------------------------------------------------------ |
 | QR code component | Newbie     | React, CSS   | [View](https://theowrange-frontendmentor.netlify.app/qr-code)      |
 | Blog preview card | Newbie     | React, CSS   | [View](https://theowrange-frontendmentor.netlify.app/blog-preview) |
@@ -88,9 +88,11 @@ npm run preview
 
 ## Deployment
 
-The site is deployed with Netlify.
+The project is deployed with [Netlify](https://www.netlify.com/).
 
-Every push to the main branch triggers a new production build and deployment.
+The entire project is deployed as a single site, with each challenge available at its own route.
+
+Every push to the `main` branch triggers a new production build and deployment.
 
 ## About Frontend Mentor
 

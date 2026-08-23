@@ -1,6 +1,7 @@
 import Home from '../pages/Home/Home';
 import QRCode from '../pages/QRCode/QRCode';
 import BlogPreview from '../pages/BlogPreview/BlogPreview';
+import SocialLinks from '../pages/SocialLinks/SocialLinks';
 
 export const routes = [
   {
@@ -14,5 +15,9 @@ export const routes = [
   {
     path: 'blog-preview',
     element: <BlogPreview />,
+  },
+  {
+    path: 'social-links',
+    element: <SocialLinks />,
   },
 ];

@@ -4,33 +4,33 @@
   --slate-500: hsl(216deg 15% 48%);
   --slate-900: hsl(218deg 44% 22%);
 
-  --fs-title: 1.375rem;
-  --fs-description: 0.9375rem;
-  --color-title: var(--slate-900);
-  --color-description: var(--slate-500);
-
-  --spacing-500: 40px;
-  --spacing-300: 24px;
   --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
 
   min-height: 100dvh;
+  padding: var(--spacing-200);
+
   display: grid;
   place-items: center;
+
   background: var(--slate-300);
-  padding: var(--spacing-200);
+
+  font-family: 'Outfit', var(--font-sans-serif);
+  text-align: center;
 }
 
 .card {
-  font-family: 'Outfit', var(--font-sans-serif);
-  max-width: 20rem;
+  width: min(20rem, calc(100vw - 2 * var(--spacing-200)));
   padding: var(--spacing-200);
   padding-block-end: var(--spacing-500);
-  background: var(--white);
+
   display: grid;
   gap: var(--spacing-300);
+
+  background: var(--white);
   border-radius: 20px;
   box-shadow: 0px 25px 25px 0px rgb(0 0 0 / 5%);
-  text-align: center;
 }
 
 .image {
@@ -39,20 +39,21 @@
 
 .content {
   padding-inline: var(--spacing-200);
+
   display: grid;
   gap: var(--spacing-200);
 }
 
 .title {
-  font-size: var(--fs-title);
+  color: var(--slate-900);
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-title);
 }
 
 .description {
-  font-size: var(--fs-description);
+  color: var(--slate-500);
+  font-size: 0.9375rem;
   line-height: 1.4;
   letter-spacing: 0.2px;
-  color: var(--color-description);
 }
