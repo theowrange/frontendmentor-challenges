@@ -1,6 +1,7 @@
 import qrCodeThumbnail from '../assets/solutions/qr-code/preview.jpg';
 import blogPreviewThumbnail from '../assets/solutions/blog-preview/preview.jpg';
 import socialLinksThumbnail from '../assets/solutions/social-links/preview.jpg';
+import nftPreviewThumbnail from '../assets/solutions/nft-preview/preview.jpg';
 export const solutions = [
   {
     id: 'qr-code',
@@ -19,5 +20,11 @@ export const solutions = [
     title: 'Social links profile',
     thumbnail: socialLinksThumbnail,
     path: '/social-links',
+  },
+  {
+    id: 'nft-preview',
+    title: 'NFT preview card component',
+    thumbnail: nftPreviewThumbnail,
+    path: '/nft-preview',
   },
 ];

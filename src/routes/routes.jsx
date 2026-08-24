@@ -2,6 +2,7 @@ import Home from '../pages/Home/Home';
 import QRCode from '../pages/QRCode/QRCode';
 import BlogPreview from '../pages/BlogPreview/BlogPreview';
 import SocialLinks from '../pages/SocialLinks/SocialLinks';
+import NFTPreview from '../pages/NFTPreview/NFTPreview';
 
 export const routes = [
   {
@@ -19,5 +20,9 @@ export const routes = [
   {
     path: 'social-links',
     element: <SocialLinks />,
+  },
+  {
+    path: 'nft-preview',
+    element: <NFTPreview />,
   },
 ];

@@ -1,6 +1,5 @@
 .page {
-  --accent: hsl(47deg 88% 63%);
-  --white: hsl(0deg 0% 100%);
+  --yellow: hsl(47deg 88% 63%);
   --gray-500: hsl(0deg 0% 42%);
   --gray-950: hsl(0deg 0% 7%);
 
@@ -8,17 +7,13 @@
   --font-size-m: clamp(0.875rem, 0.5rem + 1.6vw, 1rem);
   --font-size-lg: clamp(1.25rem, 0.5rem + 3.2vw, 1.5rem);
 
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-
   min-height: 100dvh;
   padding: var(--spacing-300);
 
   display: grid;
   place-items: center;
 
-  background: var(--accent);
+  background: var(--yellow);
   color: var(--gray-950);
 
   font-family: 'Figtree', var(--font-sans-serif);
@@ -57,7 +52,7 @@
   width: fit-content;
   padding: 4px var(--spacing-150);
 
-  background-color: var(--accent);
+  background-color: var(--yellow);
   border-radius: 4px;
 
   font-size: var(--font-size-sm);
@@ -79,7 +74,7 @@
 
     &:hover,
     &:focus-visible {
-      color: var(--accent);
+      color: var(--yellow);
     }
 
     &:focus-visible {

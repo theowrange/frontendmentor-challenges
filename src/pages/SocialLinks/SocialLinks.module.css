@@ -1,18 +1,11 @@
 .page {
-  --accent: hsl(75deg 94% 57%);
-  --white: hsl(0deg 0% 100%);
+  --green: hsl(75deg 94% 57%);
   --gray-700: hsl(0deg 0% 20%);
   --gray-800: hsl(0deg 0% 12%);
   --gray-900: hsl(0deg 0% 8%);
 
   --font-size-sm: 0.875rem;
   --font-size-lg: 1.5rem;
-
-  --spacing-50: 4px;
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-500: 40px;
 
   min-height: 100dvh;
   padding: var(--spacing-300);
@@ -58,7 +51,7 @@
 }
 
 .location {
-  color: var(--accent);
+  color: var(--green);
 }
 
 .bio {
@@ -87,7 +80,7 @@
 
   &:hover,
   &:focus-visible {
-    background: var(--accent);
+    background: var(--green);
     color: var(--gray-900);
   }
 }

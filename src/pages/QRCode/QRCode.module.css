@@ -1,12 +1,7 @@
 .page {
-  --white: hsl(0deg 0% 100%);
   --slate-300: hsl(212deg 45% 89%);
   --slate-500: hsl(216deg 15% 48%);
   --slate-900: hsl(218deg 44% 22%);
-
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-500: 40px;
 
   min-height: 100dvh;
   padding: var(--spacing-200);
