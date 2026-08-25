@@ -3,6 +3,7 @@ import QRCode from '../pages/QRCode/QRCode';
 import BlogPreview from '../pages/BlogPreview/BlogPreview';
 import SocialLinks from '../pages/SocialLinks/SocialLinks';
 import NFTPreview from '../pages/NFTPreview/NFTPreview';
+import ProfileCard from '../pages/ProfileCard/ProfileCard';
 
 export const routes = [
   {
@@ -24,5 +25,9 @@ export const routes = [
   {
     path: 'nft-preview',
     element: <NFTPreview />,
+  },
+  {
+    path: 'profile-card',
+    element: <ProfileCard />,
   },
 ];

@@ -1,0 +1,144 @@
+.page {
+  --blue-600: hsl(185deg 75% 39%);
+  --navy-950: hsl(229deg 23% 23%);
+  --gray-500: hsl(227deg 10% 46%);
+  --gray-100: hsl(225deg 10% 92%);
+  --bg-pattern-width: min(978px, 166vw);
+
+  min-height: 100dvh;
+  padding: var(--spacing-300);
+
+  display: grid;
+  place-items: center;
+
+  position: relative;
+
+  background: var(--blue-600);
+  color: var(--gray-500);
+
+  font-size: 1.125rem;
+  font-family: 'Kumbh Sans', var(--font-sans-serif);
+  line-height: 1.25;
+
+  &::before,
+  &::after {
+    content: '';
+    position: fixed;
+    width: var(--bg-pattern-width);
+    font-weight: 400;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+
+  &::before {
+    top: calc(var(--bg-pattern-width) * -0.52);
+    right: 52vw;
+    background-image: url('../../assets/solutions/profile-card/bg-pattern-top.svg');
+  }
+  &::after {
+    bottom: calc(var(--bg-pattern-width) * -0.65);
+    left: 48vw;
+    background-image: url('../../assets/solutions/profile-card/bg-pattern-bottom.svg');
+  }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+
+  width: min(350px, calc(100vw - 2 * var(--spacing-300)));
+
+  display: grid;
+  padding-block-end: var(--spacing-300);
+
+  overflow: hidden;
+
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 50px 100px 20px hsl(197deg 85% 20% / 0.25);
+}
+
+.cardPattern {
+  object-fit: cover;
+  height: 144px;
+}
+
+.profile {
+  display: grid;
+  gap: var(--spacing-200);
+  margin-block-start: -48px;
+}
+
+.avatarWrapper {
+  width: 106px;
+  aspect-ratio: 1;
+
+  margin-inline: auto;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.info {
+  display: grid;
+  gap: var(--spacing-300);
+}
+
+.details {
+  display: grid;
+  justify-items: center;
+  gap: var(--spacing-100);
+}
+
+.name {
+  color: var(--navy-950);
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  .age {
+    padding-inline-start: var(--spacing-100);
+    color: var(--gray-500);
+    font-weight: 400;
+  }
+}
+
+.location {
+  font-size: 0.875rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--gray-100);
+  border: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-700);
+  padding: 0;
+  list-style-type: none;
+  & > li {
+    display: grid;
+    justify-items: center;
+    gap: var(--spacing-100);
+
+    & strong {
+      color: var(--navy-950);
+    }
+
+    & span {
+      font-size: 0.625rem;
+      letter-spacing: 1.5px;
+    }
+  }
+}
