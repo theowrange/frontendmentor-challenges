@@ -4,6 +4,7 @@ import BlogPreview from '../pages/BlogPreview/BlogPreview';
 import SocialLinks from '../pages/SocialLinks/SocialLinks';
 import NFTPreview from '../pages/NFTPreview/NFTPreview';
 import ProfileCard from '../pages/ProfileCard/ProfileCard';
+import OrderSummary from '../pages/OrderSummary/OrderSummary';
 
 export const routes = [
   {
@@ -29,5 +30,9 @@ export const routes = [
   {
     path: 'profile-card',
     element: <ProfileCard />,
+  },
+  {
+    path: 'order-summary',
+    element: <OrderSummary />,
   },
 ];

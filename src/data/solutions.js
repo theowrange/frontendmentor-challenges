@@ -3,6 +3,8 @@ import blogPreviewThumbnail from '../assets/solutions/blog-preview/preview.jpg';
 import socialLinksThumbnail from '../assets/solutions/social-links/preview.jpg';
 import nftPreviewThumbnail from '../assets/solutions/nft-preview/preview.jpg';
 import profileCardThumbnail from '../assets/solutions/profile-card/preview.jpg';
+import orderSummaryThumbnail from '../assets/solutions/order-summary/preview.jpg';
+
 export const solutions = [
   {
     id: 'qr-code',
@@ -33,5 +35,11 @@ export const solutions = [
     title: 'Profile card component',
     thumbnail: profileCardThumbnail,
     path: '/profile-card',
+  },
+  {
+    id: 'order-summary',
+    title: 'Order summary component',
+    thumbnail: orderSummaryThumbnail,
+    path: '/order-summary',
   },
 ];

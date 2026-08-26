@@ -92,7 +92,14 @@ html {
   --spacing-300: 24px;
   --spacing-400: 32px;
   --spacing-500: 40px;
+  --spacing-600: 48px;
   --spacing-700: 56px;
 
   font-family: var(--font-sans-serif);
+}
+
+.divider {
+  height: 1px;
+  background: currentColor;
+  border: 0;
 }
