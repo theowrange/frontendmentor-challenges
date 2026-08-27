@@ -9,19 +9,19 @@ function OrderSummary() {
     <main className={styles.page}>
       <FadeIn>
         <article className={styles.card}>
-          <img className={styles.hero} src={heroImage} alt="" />
+          <img src={heroImage} alt="" />
           <div className={styles.content}>
             <div className={styles.contentWrapper}>
               <header className={styles.header}>
                 <h1 className={styles.title}>{title}</h1>
-                <p className={styles.description}>{description}</p>
+                <p>{description}</p>
               </header>
               <div className={styles.plan}>
-                <div className={styles.planDetailsWrapper}>
+                <div className={styles.planInfo}>
                   <img className={styles.musicIcon} src={musicIcon} alt="" />
-                  <div className={styles.planDetails}>
+                  <div className={styles.planText}>
                     <strong className={styles.planName}>{plan.name}</strong>
-                    <span className={styles.price}>{plan.price}</span>
+                    <span>{plan.price}</span>
                   </div>
                 </div>
                 <a href="#change-plan" className={styles.changeLink}>
