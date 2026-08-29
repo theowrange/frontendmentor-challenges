@@ -4,6 +4,7 @@ import socialLinksThumbnail from '../assets/solutions/social-links/preview.jpg';
 import nftPreviewThumbnail from '../assets/solutions/nft-preview/preview.jpg';
 import profileCardThumbnail from '../assets/solutions/profile-card/preview.jpg';
 import orderSummaryThumbnail from '../assets/solutions/order-summary/preview.jpg';
+import recipeThumbnail from '../assets/solutions/recipe/preview.jpg';
 
 export const solutions = [
   {
@@ -41,5 +42,11 @@ export const solutions = [
     title: 'Order summary component',
     thumbnail: orderSummaryThumbnail,
     path: '/order-summary',
+  },
+  {
+    id: 'recipe',
+    title: 'Recipe page',
+    thumbnail: recipeThumbnail,
+    path: '/recipe',
   },
 ];

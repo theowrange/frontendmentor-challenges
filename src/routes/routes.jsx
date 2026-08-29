@@ -5,6 +5,7 @@ import SocialLinks from '../pages/SocialLinks/SocialLinks';
 import NFTPreview from '../pages/NFTPreview/NFTPreview';
 import ProfileCard from '../pages/ProfileCard/ProfileCard';
 import OrderSummary from '../pages/OrderSummary/OrderSummary';
+import Recipe from '../pages/Recipe/Recipe';
 
 export const routes = [
   {
@@ -34,5 +35,9 @@ export const routes = [
   {
     path: 'order-summary',
     element: <OrderSummary />,
+  },
+  {
+    path: 'recipe',
+    element: <Recipe />,
   },
 ];

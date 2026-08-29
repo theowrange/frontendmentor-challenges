@@ -1,0 +1,170 @@
+.page {
+  --rose-800: hsl(332deg 51% 32%);
+  --rose-50: hsl(330deg 100% 98%);
+  --stone-900: hsl(24deg 5% 18%);
+  --stone-600: hsl(30deg 10% 34%);
+  --stone-150: hsl(30deg 18% 87%);
+  --stone-100: hsl(30deg 54% 90%);
+  --brown-800: hsl(14deg 45% 36%);
+
+  --font-text: 'Outfit', var(--font-sans-serif);
+  --font-title: 'Young Serif', var(--font-serif);
+
+  min-height: 100dvh;
+  font-family: var(--font-text);
+  background: var(--stone-100);
+  color: var(--stone-600);
+}
+
+.card {
+  width: min(100%, 46rem);
+  margin: 0 auto;
+  background: var(--white);
+}
+
+.content {
+  padding-inline: var(--spacing-400);
+  padding-block: var(--spacing-500);
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+.header {
+  display: grid;
+  gap: var(--spacing-300);
+
+  & h1 {
+    font-size: 2.25rem;
+  }
+}
+
+.title,
+.sectionTitle {
+  font-family: var(--font-title);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.section {
+  display: grid;
+  gap: 24px;
+
+  & li::before {
+    background-color: var(--brown-800);
+  }
+}
+
+.section + .section {
+  border-block-start: 1px solid var(--stone-150);
+  padding-block-start: var(--spacing-400);
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  color: var(--brown-800);
+}
+
+.bulletList {
+  display: grid;
+  gap: var(--spacing-100);
+  padding: 0;
+  list-style: none;
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-200);
+    padding-inline-start: var(--spacing-100);
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      margin-inline-end: var(--spacing-150);
+      border-radius: 50%;
+      background: var(--brown-800);
+      flex-shrink: 0;
+    }
+  }
+}
+
+.numberList {
+  display: grid;
+  gap: var(--spacing-100);
+  padding-inline-start: var(--spacing-300);
+
+  & li {
+    padding-inline-start: var(--spacing-200);
+  }
+
+  & li::marker {
+    font-variant: normal;
+    color: var(--brown-800);
+    font-weight: 700;
+  }
+}
+
+.preparation {
+  display: grid;
+  gap: var(--spacing-200);
+  padding: var(--spacing-300);
+  background: var(--rose-50);
+  border-radius: 12px;
+
+  & h2 {
+    font-family: var(--font-text);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--rose-800);
+  }
+
+  & li::before {
+    background: var(--rose-800);
+  }
+}
+
+.nutritionTable {
+  border-collapse: collapse;
+}
+
+.nutritionRow td {
+  padding-block-end: var(--spacing-150);
+}
+
+.nutritionRow:last-child td {
+  padding-block-end: 0;
+}
+
+.nutritionRow + .nutritionRow td {
+  border-block-start: 1px solid var(--stone-150);
+  padding-block-start: var(--spacing-150);
+}
+
+.nutritionLabel {
+  width: 50%;
+  padding-inline: var(--spacing-400);
+}
+
+.nutritionValue {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+@media (min-width: 46rem) {
+  .page {
+    padding: var(--spacing-500);
+  }
+
+  .card {
+    border-radius: 24px;
+    padding: var(--spacing-500);
+  }
+
+  .image {
+    border-radius: 12px;
+  }
+
+  .content {
+    padding-inline: 0;
+  }
+}
