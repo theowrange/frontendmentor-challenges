@@ -5,6 +5,7 @@ import nftPreviewThumbnail from '../assets/solutions/nft-preview/preview.jpg';
 import profileCardThumbnail from '../assets/solutions/profile-card/preview.jpg';
 import orderSummaryThumbnail from '../assets/solutions/order-summary/preview.jpg';
 import recipeThumbnail from '../assets/solutions/recipe/preview.jpg';
+import resultsSummaryThumbnail from '../assets/solutions/results-summary/preview.jpg';
 
 export const solutions = [
   {
@@ -48,5 +49,11 @@ export const solutions = [
     title: 'Recipe page',
     thumbnail: recipeThumbnail,
     path: '/recipe',
+  },
+  {
+    id: 'results-summary',
+    title: 'Results summary component',
+    thumbnail: resultsSummaryThumbnail,
+    path: '/results-summary',
   },
 ];
