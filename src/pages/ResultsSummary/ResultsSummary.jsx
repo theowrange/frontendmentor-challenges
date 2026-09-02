@@ -33,7 +33,9 @@ function ResultsSummary() {
 
             <ul>
               {results.map((item) => (
-                <li key={item.category}>
+                <li
+                  key={item.category}
+                  className={`${styles.item} ${styles[item.color]}`}>
                   <div className={styles.label}>
                     <img src={item.icon} alt="" />
                     <span>{item.category}</span>
@@ -41,7 +43,7 @@ function ResultsSummary() {
 
                   <div className={styles.score}>
                     <span className={styles.scoreValue}>{item.score}</span>
-                    <span>/ 100</span>
+                    <span className={styles.totalScore}>/ 100</span>
                   </div>
                 </li>
               ))}

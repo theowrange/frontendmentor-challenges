@@ -8,21 +8,25 @@ const resultsSummary = [
     category: 'Reaction',
     score: 80,
     icon: reactionIcon,
+    color: 'red',
   },
   {
     category: 'Memory',
     score: 92,
     icon: memoryIcon,
+    color: 'yellow',
   },
   {
     category: 'Verbal',
     score: 61,
     icon: verbalIcon,
+    color: 'green',
   },
   {
     category: 'Visual',
     score: 72,
     icon: visualIcon,
+    color: 'blue',
   },
 ];
 

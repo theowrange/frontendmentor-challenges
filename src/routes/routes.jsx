@@ -6,6 +6,7 @@ import NFTPreview from '../pages/NFTPreview/NFTPreview';
 import ProfileCard from '../pages/ProfileCard/ProfileCard';
 import OrderSummary from '../pages/OrderSummary/OrderSummary';
 import Recipe from '../pages/Recipe/Recipe';
+import ResultsSummary from '../pages/ResultsSummary/ResultsSummary';
 
 export const routes = [
   {
@@ -39,5 +40,9 @@ export const routes = [
   {
     path: 'recipe',
     element: <Recipe />,
+  },
+  {
+    path: 'results-summary',
+    element: <ResultsSummary />,
   },
 ];
