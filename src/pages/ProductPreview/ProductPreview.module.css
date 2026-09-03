@@ -1,0 +1,136 @@
+.page {
+  --green-500: hsl(158deg 36% 37%);
+  --green-700: hsl(158deg 42% 18%);
+
+  --black: hsl(212deg 21% 14%);
+  --gray: hsl(228deg 12% 48%);
+  --cream: hsl(30deg 38% 92%);
+
+  --ff-sans-serif: 'Montserrat', var(--font-sans-serif);
+  --fw-sans-m: 500;
+  --fw-sans-b: 700;
+
+  --ff-serif: 'Fraunces', var(--font-serif);
+  --fw-serif-b: 700;
+
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  background: var(--cream);
+  color: var(--gray);
+
+  font-family: var(--ff-sans-serif);
+  font-size: 0.875rem;
+  font-weight: var(--fw-sans-m);
+}
+
+.card {
+  width: max(350px, 100% - 3rem);
+  margin: 0 auto;
+  border-radius: 8px;
+  background: var(--white);
+  overflow: hidden;
+
+  @media (min-width: 40rem) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(600px, 100% - 3rem);
+  }
+}
+
+.productImage img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: var(--spacing-400);
+  display: grid;
+  gap: var(--spacing-300);
+
+  @media (min-width: 40rem) {
+    gap: var(--spacing-400);
+  }
+}
+
+.header {
+  display: grid;
+  gap: var(--spacing-300);
+}
+
+.category {
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--ff-serif);
+  font-size: 2rem;
+  font-weight: var(--fw-serif-b);
+  line-height: 1;
+
+  color: var(--black);
+}
+
+.description {
+  line-height: 1.6;
+}
+
+.price {
+  display: flex;
+  gap: var(--spacing-200);
+  align-items: center;
+}
+
+.currentPrice {
+  font-family: var(--ff-serif);
+  font-size: 2rem;
+  font-weight: var(--fw-serif-b);
+  line-height: 1;
+  color: var(--green-500);
+}
+
+.originalPrice {
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  text-decoration-line: line-through;
+}
+
+.addToCart {
+  min-height: 50px;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+
+  background: var(--green-500);
+  color: var(--white);
+
+  font-size: 0.875rem;
+  font-weight: var(--fw-sans-b);
+
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+
+  & img {
+    width: 18px;
+    aspect-ratio: 1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: var(--green-700);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

@@ -6,6 +6,7 @@ import profileCardThumbnail from '../assets/solutions/profile-card/preview.jpg';
 import orderSummaryThumbnail from '../assets/solutions/order-summary/preview.jpg';
 import recipeThumbnail from '../assets/solutions/recipe/preview.jpg';
 import resultsSummaryThumbnail from '../assets/solutions/results-summary/preview.jpg';
+import productPreviewThumbnail from '../assets/solutions/product-preview/preview.jpg';
 
 export const solutions = [
   {
@@ -55,5 +56,11 @@ export const solutions = [
     title: 'Results summary component',
     thumbnail: resultsSummaryThumbnail,
     path: '/results-summary',
+  },
+  {
+    id: 'product-preview',
+    title: 'Product preview card component',
+    thumbnail: productPreviewThumbnail,
+    path: '/product-preview',
   },
 ];

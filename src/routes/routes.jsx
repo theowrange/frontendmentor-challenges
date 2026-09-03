@@ -7,6 +7,7 @@ import ProfileCard from '../pages/ProfileCard/ProfileCard';
 import OrderSummary from '../pages/OrderSummary/OrderSummary';
 import Recipe from '../pages/Recipe/Recipe';
 import ResultsSummary from '../pages/ResultsSummary/ResultsSummary';
+import ProductPreview from '../pages/ProductPreview/ProductPreview';
 
 export const routes = [
   {
@@ -44,5 +45,9 @@ export const routes = [
   {
     path: 'results-summary',
     element: <ResultsSummary />,
+  },
+  {
+    path: 'product-preview',
+    element: <ProductPreview />,
   },
 ];
