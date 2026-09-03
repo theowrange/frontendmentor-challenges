@@ -15,7 +15,7 @@ function ResultsSummary() {
             <h1 className={styles.resultTitle}>Your Result</h1>
 
             <div className={styles.resultScore}>
-              <strong className={styles.averageScore}>{average}</strong>
+              <span className={styles.averageScore}>{average}</span>
               <span>of 100</span>
             </div>
 
@@ -31,7 +31,7 @@ function ResultsSummary() {
           <section className={styles.summary}>
             <h2>Summary</h2>
 
-            <ul>
+            <ul className={styles.summaryList}>
               {results.map((item) => (
                 <li
                   key={item.category}
