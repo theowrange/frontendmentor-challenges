@@ -96,7 +96,7 @@
   border-radius: 50%;
   background: var(--score-gradient);
 
-  @media (min-width: 48rem) {
+  @media (min-width: 32rem) {
     width: 200px;
   }
 }
