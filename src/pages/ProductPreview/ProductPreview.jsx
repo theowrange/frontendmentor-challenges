@@ -1,5 +1,6 @@
 import styles from './ProductPreview.module.css';
 import FadeIn from '../../components/FadeIn/FadeIn';
+import VisuallyHidden from '../../components/VisuallyHidden/VisuallyHidden';
 import cartIcon from '../../assets/solutions/product-preview/icon-cart.svg';
 import product from '../../data/productPreview';
 
@@ -33,9 +34,11 @@ function ProductPreview() {
 
             <div className={styles.price}>
               <strong className={styles.currentPrice}>
+                <VisuallyHidden>Current price: </VisuallyHidden>
                 {formatter.format(product.price.current)}
               </strong>
               <del className={styles.originalPrice}>
+                <VisuallyHidden>Original price: </VisuallyHidden>
                 {formatter.format(product.price.original)}
               </del>
             </div>
