@@ -7,6 +7,7 @@ import orderSummaryThumbnail from '../assets/solutions/order-summary/preview.jpg
 import recipeThumbnail from '../assets/solutions/recipe/preview.jpg';
 import resultsSummaryThumbnail from '../assets/solutions/results-summary/preview.jpg';
 import productPreviewThumbnail from '../assets/solutions/product-preview/preview.jpg';
+import statsPreviewThumbnail from '../assets/solutions/stats-preview/preview.jpg';
 
 export const solutions = [
   {
@@ -62,5 +63,11 @@ export const solutions = [
     title: 'Product preview card component',
     thumbnail: productPreviewThumbnail,
     path: '/product-preview',
+  },
+  {
+    id: 'stats-preview',
+    title: 'Stats preview card component',
+    thumbnail: statsPreviewThumbnail,
+    path: '/stats-preview',
   },
 ];

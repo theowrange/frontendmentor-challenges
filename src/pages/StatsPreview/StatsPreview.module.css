@@ -1,0 +1,143 @@
+.page {
+  --navy-950: hsl(233deg 47% 7%);
+  --blue-950: hsl(244deg 37% 16%);
+  --purple-500: hsl(277deg 64% 61%);
+
+  --white-75: hsl(0deg 0% 100% / 0.75);
+  --white-60: hsl(0deg 0% 100% / 0.6);
+
+  --fz-body: 0.9375rem;
+
+  --ff-primary: 'Inter', var(--font-sans-serif);
+  --ff-secondary: 'Lexend Deca', var(--font-sans-serif);
+  --fw-n: 400;
+  --fw-b: 700;
+
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  background: var(--navy-950);
+  color: var(--white-75);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fz-body);
+  font-weight: var(--fw-n);
+  line-height: 1.65;
+}
+
+.card {
+  width: min(100% - 3rem, 36rem);
+  margin: 0 auto;
+
+  display: grid;
+
+  background: var(--blue-950);
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media (min-width: 72rem) {
+    grid-template-columns: 1fr 1fr;
+    width: min(100% - 3rem, 70.5rem);
+  }
+}
+
+.picture {
+  grid-row: 1;
+  background: var(--purple-500);
+
+  @media (min-width: 72rem) {
+    grid-column: 2;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0.75;
+  mix-blend-mode: multiply;
+}
+
+.content {
+  grid-row: 2;
+  display: grid;
+  gap: var(--spacing-500);
+  padding: var(--spacing-400);
+
+  text-align: center;
+
+  @media (min-width: 38rem) {
+    gap: var(--spacing-900);
+    padding: var(--spacing-800) var(--spacing-1000);
+
+    text-align: left;
+  }
+
+  @media (min-width: 72rem) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+.header {
+  display: grid;
+  gap: var(--spacing-100);
+
+  @media (min-width: 38rem) {
+    gap: var(--spacing-300);
+  }
+}
+
+.title {
+  color: var(--white);
+
+  font-size: 1.75rem;
+  font-weight: var(--fw-b);
+  line-height: 1.25;
+
+  @media (min-width: 38rem) {
+    font-size: 2.25rem;
+  }
+}
+
+.highlight {
+  color: var(--purple-500);
+}
+
+.stats {
+  padding: 0;
+  display: grid;
+  gap: var(--spacing-400);
+
+  list-style: none;
+
+  @media (min-width: 38rem) {
+    display: flex;
+    gap: var(--spacing-800);
+  }
+
+  & li {
+    display: grid;
+
+    & strong {
+      color: var(--white);
+
+      font-size: 1.5rem;
+      font-weight: var(--fw-b);
+      line-height: 1.2;
+    }
+
+    & span {
+      color: var(--white-60);
+
+      font-family: var(--ff-secondary);
+      font-size: 0.75rem;
+      font-weight: var(--fw-n);
+      line-height: 2;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -8,6 +8,7 @@ import OrderSummary from '../pages/OrderSummary/OrderSummary';
 import Recipe from '../pages/Recipe/Recipe';
 import ResultsSummary from '../pages/ResultsSummary/ResultsSummary';
 import ProductPreview from '../pages/ProductPreview/ProductPreview';
+import StatsPreview from '../pages/StatsPreview/StatsPreview';
 
 export const routes = [
   {
@@ -49,5 +50,9 @@ export const routes = [
   {
     path: 'product-preview',
     element: <ProductPreview />,
+  },
+  {
+    path: 'stats-preview',
+    element: <StatsPreview />,
   },
 ];
