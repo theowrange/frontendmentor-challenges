@@ -8,6 +8,7 @@ import recipeThumbnail from '../assets/solutions/recipe/preview.jpg';
 import resultsSummaryThumbnail from '../assets/solutions/results-summary/preview.jpg';
 import productPreviewThumbnail from '../assets/solutions/product-preview/preview.jpg';
 import statsPreviewThumbnail from '../assets/solutions/stats-preview/preview.jpg';
+import threeColumnPreviewThumbnail from '../assets/solutions/three-column-preview/preview.jpg';
 
 export const solutions = [
   {
@@ -69,5 +70,11 @@ export const solutions = [
     title: 'Stats preview card component',
     thumbnail: statsPreviewThumbnail,
     path: '/stats-preview',
+  },
+  {
+    id: 'three-column-preview',
+    title: '3-column preview card component',
+    thumbnail: threeColumnPreviewThumbnail,
+    path: '/three-column-preview',
   },
 ];

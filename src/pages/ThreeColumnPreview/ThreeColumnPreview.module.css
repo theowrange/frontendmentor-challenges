@@ -1,0 +1,113 @@
+.page {
+  --gold-500: hsl(31deg 77% 52%);
+  --cyan-800: hsl(184deg 100% 22%);
+  --green-950: hsl(179deg 100% 13%);
+
+  --white-75: hsla(0deg 0% 100% / 0.75);
+  --gray-100: hsl(0deg 0% 95%);
+
+  --fz-body: 0.9375rem;
+
+  --ff-title: 'Big Shoulders', var(--font-sans-serif);
+  --ff-body: 'Lexend Deca', var(--font-sans-serif);
+  --fw-n: 400;
+  --fw-b: 700;
+
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-n);
+  font-size: var(--fz-body);
+  background: var(--gray-100);
+  color: var(--white-75);
+  padding: var(--spacing-300);
+  line-height: 1.65;
+}
+
+.cards {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 58rem;
+  width: fit-content;
+
+  @media (min-width: 62rem) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: var(--spacing-600);
+  max-width: 38rem;
+
+  @media (min-width: 36rem) and (max-width: 62rem) {
+    padding: var(--spacing-1000);
+  }
+}
+
+.container {
+  display: grid;
+  gap: var(--spacing-400);
+
+  @media (min-width: 62rem) {
+    gap: var(--spacing-500);
+  }
+}
+
+.content {
+  display: grid;
+  gap: var(--spacing-300);
+
+  @media (min-width: 62rem) {
+    gap: var(--spacing-1000);
+  }
+}
+
+.text {
+  display: grid;
+  gap: var(--spacing-300);
+
+  & h2 {
+    font-family: var(--ff-title);
+    font-size: 2.5rem;
+    font-weight: var(--fw-b);
+    line-height: 1.2;
+    color: var(--gray-100);
+  }
+}
+
+.button {
+  min-height: 3rem;
+  display: grid;
+  place-content: center;
+  padding: var(--spacing-100) var(--spacing-400);
+  background: var(--gray-100);
+  border-radius: 25px;
+  width: fit-content;
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px var(--white) inset;
+    background: var(--accent-color);
+    color: var(--white);
+  }
+}
+
+.sedans {
+  --accent-color: var(--gold-500);
+  background: var(--accent-color);
+}
+
+.suvs {
+  --accent-color: var(--cyan-800);
+  background: var(--accent-color);
+}
+
+.luxury {
+  --accent-color: var(--green-950);
+  background: var(--accent-color);
+}

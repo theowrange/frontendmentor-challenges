@@ -9,6 +9,7 @@ import Recipe from '../pages/Recipe/Recipe';
 import ResultsSummary from '../pages/ResultsSummary/ResultsSummary';
 import ProductPreview from '../pages/ProductPreview/ProductPreview';
 import StatsPreview from '../pages/StatsPreview/StatsPreview';
+import ThreeColumnPreview from '../pages/ThreeColumnPreview/ThreeColumnPreview';
 
 export const routes = [
   {
@@ -54,5 +55,9 @@ export const routes = [
   {
     path: 'stats-preview',
     element: <StatsPreview />,
+  },
+  {
+    path: 'three-column-preview',
+    element: <ThreeColumnPreview />,
   },
 ];
